@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+/* font-family: 'Staatliches', cursive; */
+
+p, a {
+
+    font-family: 'Staatliches', cursive;
+    font-size: 16px;
+}
+
+a {
+
+    display: block;
+    text-decoration: none;
+}
+
+.btn-1 {
+
+    background-color: red;
+    color: white;
+    padding: 1vw;
+    margin: 10vh auto;
+    width: 20vw;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 5vw;
+    /* Transformation */
+    transform: scale(1);
+    transition: transform 4000ms;
+}
+
+.btn-1:hover {
+
+    transform: scale(2.25);
+    
+}
+
+.btn-2 {
+
+    background-color: red;
+    color: white;
+    padding: 1vw;
+    margin: 10vh auto;
+    width: 20vw;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 5vw;
+    /* Transformation */
+    transition: all 4000ms;
+
+}
+    
+
+.btn-2:hover {
+
+    transform: scale(2);
+    background-color: turquoise;
+    color: tomato;
+    border-radius: 0;
+    
+}
+
+.btn-3 {
+
+    background-color: red;
+    color: white;
+    padding: 1vw;
+    margin: 10vh auto;
+    width: 20vw;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 5vw;
+    /* Transformation */
+    transition: transform 800ms, background-color 1200ms, color 600ms;
+
+}
+    
+
+.btn-3:hover {
+
+    transform: scale(2);
+    background-color: white;
+    color: red;
+    
+}
+
+.btn-4 {
+
+    background-color: red;
+    color: white;
+    padding: 1vw;
+    margin: 10vh auto;
+    width: 20vw;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 5vw;
+    /* Transformation */
+    transform: scale, translate, skew;
+    transition-duration: 1730ms;
+
+
+}
+    
+
+.btn-4:hover {
+
+    transform: scale(2) translate(150px, 75px) skew(25deg, 45deg);
+    background-color: royalblue;
+    color: rgb(204, 46, 204);
+    
+}
+
+.container-dot {
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.dot {
+
+    background-color: salmon;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.dot-one {
+
+    animation: jump1 1s ease infinite;
+}
+
+.dot-two {
+
+    animation: jump2 1s ease infinite;
+}
+
+.dot-three {
+
+    animation: jump3 1s ease infinite;
+}
+
+@keyframes jump1 {
+
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+        transform: scale(.9, 1.1) translateY(-5px);
+    }
+
+    50% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+@keyframes jump2 {
+
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    30% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    50% {
+        transform: scale(.9, 1.1) translateY(-5px);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+
+
+@keyframes jump3 {
+
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    30% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    50% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    70% {
+        transform: scale(.9, 1.1) translateY(-5px);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+h1 {
+
+    color: sandybrown;
+    font-size: 5em;
+    text-align: center;
+}
+
+h1:hover {
+
+    animation: wiggle 2s infinite;
+}
+
+@keyframes wiggle {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    10% {
+        transform: rotate(5deg);
+    }
+
+    20% {
+        transform: rotate(-5deg);
+    }
+
+    30% {
+        transform: rotate(5deg);
+    }
+
+    40% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    60% {
+        transform: rotate(0);
+    }
+
+    70% {
+        transform: rotate(0);
+    }
+
+    80% {
+        transform: rotate(-5deg);
+    }
+
+    90% {
+        transform: rotate(5deg);
+    }
+
+
+    100% {
+        transform: rotate(0);
+    }
+    
+
+}
+
+.div-qui-tourne {
+
+    width: 20vw;
+    height: 10vh;
+    background-color: skyblue;
+    transform: rotate(360deg);
+    animation: turn 5000ms infinite;
+
+}
+
+@keyframes turn {
+
+    
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+.ball {
+
+    width: 250vw;
+    height: 250vw;
+    border-radius: 50%;
+    transform: scale(.1);
+    background-color: transparent;
+    transition: 4000ms;
+    z-index: -1;
+    position: absolute;
+    top: -100vh;
+    left: -80vw;
+}
+
+
+.bouton {
+
+    background-color: tan;
+    width: 20vw;
+    height: 10vh;
+}
+
+.bouton:active + .ball {
+
+    transform: scale(1);
+    background-color: yellowgreen;
+}
+
+.bouton-2 {
+
+    background-color: violet;
+    width: 20vw;
+    height: 10vh;
+}
+
+.img-vincent {
+
+    width: 100vw;
+    height: 100vw;
+    z-index: 2;
+    background: url(1.jpg) center fixed no-repeat;
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    z-index: -2;
+    transform: scale(.1);
+    transition-duration: 4000ms;
+}
+
+.bouton-2:active + .img-vincent {
+
+    transform: scale(1);
+}
